@@ -1,0 +1,13 @@
+help
+buy 0 50
+go
+sell 0 50
+take broom
+go liberpolis
+sell 0 100
+buy 0 100
+sell 0 100
+go
+go bratislava
+take almara
+quit
