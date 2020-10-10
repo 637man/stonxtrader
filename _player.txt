@@ -1,0 +1,10 @@
+#InitialMoney
+1100000
+#InitialDebt
+1000000
+#StartingPlace
+prague
+#InterestRate
+1.05
+#Inflation
+1.02

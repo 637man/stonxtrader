@@ -1,0 +1,21 @@
+﻿#PrimaryName;LongName;Alias1;Alias2;Alias3
+bratislava;Burza cenných papierov v Bratislave;pressburg;slovakia;bsse
+liberpolis;Liberland Stock Exchange;liberland;ll;llse
+newyork;New York Stock Exchange;wallstreet;nyse;nyc
+tokyo;東京証券取引所 (Tokio Stock Exchange);tokio;japan;tse
+#london;London Stock Exchange Group;britain;uk;lse
+euronext;Euronext;euro;europe;eu
+#hongkong;Hong Kong Stock Exchange;hongkong;hk;sehk
+shanghai;上海证券交易所 (Shanghai Stock Exchange);shanghai;china;sse
+prague;Burza cenných papírů Praha;praha;czechia;pse
+#philadelphia;Philadelphia Exchange;philadelphia;pennsylvania;phlx
+frankfurt;Frankfurter Wertpapierbörse;db;germany;fwb
+
+argiculture;Agricultural Commodity Exchange;food;agro;groceries
+fuel,(Bio)fuel Commodity Exchange;biofuel;oil;petro
+refined;Refined Elements & Alloys Commodity Exchange;steel;diamond;alloys
+synthetic;Synthetic Materials Commodity Exchange;plastic;nano;rubber
+forex;Foreign Currency Exchange;forex;currencies;money
+elements;Elements Exchange;periodic;raw;pure
+#bonds;Government & Corporate Bonds;bonds;obligations;oblig
+#drugs;Illegal Drug Market;drugs;cartel;mafia
