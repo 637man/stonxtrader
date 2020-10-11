@@ -2,27 +2,23 @@
 
 ## About
 
-A slightly adventurous stock trading game by 637man written for a programming
-assignment for 4IT101 - Programming in Java at the University of Economics in
-Prague, assigned by David Kral and based on an text mode adventure game 
-template provided by Michael Kolling, Lubos Pavlicek, and Jarmila Pavlickova.
-The template implements a Command object design pattern.
+A slightly adventurous stock trading game written for a programming
+assignment for a Java programming university course.
 
-In this game you assume a role of a slightly naive 20-year-old newbie stock 
+You assume a role of a slightly naive 20-year-old newbie stock 
 trader that wants to get as rich as possible as quickly as possible, so they 
-can retire as early as possible. The threshold for retiring and thus winning
-this game is directly proportional to the time remaining until 100 years, 
-accounting for inflation. Each day is represented by a turn, and a year is 
-360 days, giving 2880 turns. If you somehow manage to stonks so much that the
-64-bit integer holding the balance overflows, consider it a win as well.
+can retire as early as possible. There is no winning or losing per se, only
+highscores. Each day is represented by a turn, and a year is 
+360 days or 2880 turns. If you stonks so much the
+64-bit balance variable overflows, consider it a win as well.
 Starting amount of money is a small loan of a million dollars with 5 % annual
-interest rate and lifetime savings of $100k. There are no cents in this game.
+interest rate and lifetime savings of $100k. There are no cents, it's a nuisance.
 
-This game serves as a somewhat scaled down earlier failed Java semester work
+It's a somewhat scaled down earlier failed Java semester work
 that was supposed to be a sandbox RPG engine, while I had only 3 months of
 experience with Java, so I instead focused on perfecting the [Juliascii](https://github.com/637man/juliascii)
-fractal viewer, which was another semester work. I owe the satisfactory level
-of Stonxtrader completion to SARS-CoV-2, meaning I had more time during the
+fractal viewer, which was another semester work. I owe this level
+of Stonxtrader completion to SARS-CoV-2, as I had more time during the
 spring lockdown, and it happened not to leave my PC even for presentation.
 However, that means the code is "works on my machine" quality.
 
@@ -42,10 +38,12 @@ explicitly specified.
 
  ### Arguments
  
- * -g -- Game data folder, should contain \_player.csv and \_places.csv
- * -s -- Random seed, useful for speedruns and testing
- * -i -- Input file
- * -o -- Output file
+ * -g \<folder\> -- Game data folder, should contain \_player.txt and \_places.csv
+ * -s \<number\> -- Random seed, useful for speedruns and testing
+ * -i \<filename\> -- Input file with commands
+ * -o \<filename\> -- Output file for later inspection
+ 
+ Options -i and -o are bloat on POSIX-compliant systems, they are left there mainly for Windows users.
 
 
 ## Places
@@ -85,7 +83,7 @@ The commands are (NYI = Not Yet Implemented):
 Syntax                     | Notes
 -------------------------- | --------------------------------------------------
 go \<place\>               | implies list *, if place == "" then list places
-buy \<item\> \<quantity\>  |	default quantity 1
+buy \<item\> \<quantity\>  | default quantity 1
 sell \<item\> \<quantity\> | ditto
 borrow \<amount\>          |
 payback \<amount\>         | if amount == "" then payback as much as possible
@@ -127,7 +125,7 @@ and official specification, semicolons are used as a separator.
     # SecurityName;Volatility;InitialPrice;Supply
     Slovnaft, a. s.;5;100;1000
 
-Game save consists of _player.txt and all PrimaryName.csv.
+Game save consists of \_player.txt and all PrimaryName.csv. Saving and loading is NYI, though.
 
 ### High scores table format (_scores.csv)
 
@@ -136,3 +134,4 @@ Game save consists of _player.txt and all PrimaryName.csv.
     637man;20000000;40;20;80
     getj00;5000000000;50;40;110
 
+Displaying high scores is NYI, but the game still writes to it.
